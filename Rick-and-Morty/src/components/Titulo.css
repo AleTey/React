@@ -1,0 +1,10 @@
+.titulo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -80px;
+}
+.titulo {
+    width: 1000px;
+    height: 500px;
+}

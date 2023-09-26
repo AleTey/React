@@ -1,0 +1,22 @@
+.opciones-container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opciones {
+  width: 80%;
+  height: 100%;
+  border: 5px solid rgba(33, 85, 25, .5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #4ECDC4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #113f1f, #4ECDC4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #0f5411, #4ECDC4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

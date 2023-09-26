@@ -1,0 +1,55 @@
+.personaje-container {
+  width: 80%;
+  height: 250px;
+  margin: 2px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  border: 5px solid rgba(3, 99, 8, .5);
+  background-color: rgb(110, 211, 211);
+
+}
+
+.img {
+  /* width: 300px; */
+  /* object-fit: cover;
+   */
+   width: 250px;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  /* justify-content: center;
+  align-items: center; */
+  /* background-color: aqua; */
+}
+
+.inf {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* text-align: center; */
+}
+
+.item {
+  display: grid;
+  justify-content: start;
+  align-items: center;
+}
+
+p {
+  font-size: 30px;
+}
+
+p span {
+  font-weight: bold;
+  color: rgb(2, 65, 75);
+}
+
+img {
+  /* width: 100%; */
+}
+
+.info {
+  
+}

@@ -1,0 +1,21 @@
+.producto-container {
+    border: 1px solid #aaa;
+    min-width: 600px;
+    max-width: 800px;
+    min-height: 150px;
+    max-height: 200px;
+    display: flex;
+}
+
+.img-container {
+    width: 160px;
+    margin: 3px;
+    margin-left: 5px;
+    border: 1px solid black;
+}
+
+.descripcion {
+    border: 1px solid black;
+    width: 100%;
+    margin: 3px;
+}

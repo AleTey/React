@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { UsersApp } from './componentes/UsersApp'
-import { ConsultaAEleccion } from './componentes/ConsultaAEleccion'
+// import App from './App.jsx'
+// import './index.css'
+import Producto from './components/producto.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UsersApp />
-    <ConsultaAEleccion />
+    {/* <App /> */}
+    <Producto />
   </React.StrictMode>,
 )

@@ -1,0 +1,20 @@
+button {
+  /* min-width: 80px; */
+  /* height: 30px; */
+  /* margin: 5px; */
+  padding: 5px;
+  background-color: rgba(39, 194, 208, 0.5);
+  font-size: 30px;
+  /* background-color: red; */
+  color: #fff;
+  border-radius: 5px;
+  /* border-color: #55a; */
+  border: 3px solid rgba(41, 41, 127, 0.5) ;
+  /* border-color: rgba(41, 41, 127, 0.5) */
+}
+
+button:active {
+  /* border-bottom: 1px; */
+  /* border-right: 1px; */
+  border: 1px;
+}

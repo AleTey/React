@@ -1,0 +1,5 @@
+PRODUCTOS
+- ID
+- Modelo
+- Estampa/Color
+-

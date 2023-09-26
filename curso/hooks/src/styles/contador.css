@@ -1,0 +1,50 @@
+* {
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-size: 30px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+hr {
+    margin: 20px;
+}
+
+.contador-container {
+    height: 200px;
+    max-width: 400px;
+    background-color: #368;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    margin: auto;
+    
+}
+
+.buttons {
+    height: 30px;
+    min-width: 25px;
+    margin: 10px 5px;
+    margin-top: 20px;
+    /* margin: ; */
+}
+
+.contador-container p {
+    height: 5px;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0;
+    color: #fff;
+    margin: 10px;
+    /* margin-top: 20px; */
+}
