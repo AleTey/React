@@ -3,15 +3,16 @@ import '../components/BotonConsulta.css';
 import { useState, useEffect } from 'react';
 
 export default function BotonConsulta(props) {
-  const [consulta, setConsulta] = useState([]);
-
   
+
+  function logs(){
+    console.log("HOla");
+    console.log(props.isActiveIndex);
+  }
 
   return (
     <>
-      <button className=''>{props.text}</button>
-     
-
+      <button onClick={props.handdleClick} >{props.text}</button>
     </>
   );
 };

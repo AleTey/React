@@ -33,40 +33,46 @@ export default function Resultados(props) {
   // }, []);
 
   useEffect(() => {
-    const url = "https://rickandmortyapi.com/api/character";
-    fetch(url)
-      .then((res) => res.json())
-      .then((json) => {
-        const personajes = json.results.map((el) => ({
-          id: el.id,
-          name: el.name,
-          status: el.status,
-          species: el.species,
-          gender: el.gender,
-          location: el.location.name,
-          img: el.image,
-        }));
-  
-        setResultados(personajes);
-      })
-      .catch((error) => {
-        console.error("Error al cargar los datos:", error);
-      });
-  }, []);
+    if (props.index === 1) {
+
+
+      const url = "https://rickandmortyapi.com/api/character";
+      fetch(url)
+        .then((res) => res.json())
+        .then((json) => {
+          const personajes = json.results.map((el) => ({
+            id: el.id,
+            name: el.name,
+            status: el.status,
+            species: el.species,
+            gender: el.gender,
+            location: el.location.name,
+            img: el.image,
+          }));
+
+          setResultados(personajes);
+        })
+        .catch((error) => {
+          console.error("Error al cargar los datos:", error);
+        });
+    }else {
+      setResultados([])
+    }
+  }, [props.index]);
 
 
   return (
     <>
       <div className="resultados-container">
         {resultados.map((el) => (
-          <Personaje key={el.id} 
-                     name={el.name} 
-                     id={el.id}
-                     status = {el.status} 
-                     species={el.species} 
-                     gender={el.gender} 
-                     location={el.location} 
-                     img={el.img} />
+          <Personaje key={el.id}
+            name={el.name}
+            id={el.id}
+            status={el.status}
+            species={el.species}
+            gender={el.gender}
+            location={el.location}
+            img={el.img} />
         ))};
       </div>
     </>
